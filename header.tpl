@@ -51,6 +51,9 @@
 			var priceDisplayMethod = {$priceDisplay};
 			var roundMode = {$roundMode};
 		</script>
+        
+		{$HOOK_HEADER}
+
 {if isset($css_files)}
 	{foreach from=$css_files key=css_uri item=media}
 	<link href="{$css_uri}" rel="stylesheet" type="text/css" media="{$media}" />
@@ -61,7 +64,7 @@
 	<script type="text/javascript" src="{$js_uri}"></script>
 	{/foreach}
 {/if}
-		{$HOOK_HEADER}
+	<link href="{$css_dir}threed.css" rel="stylesheet" type="text/css" media="screen" />
 	</head>
 	
 	<body {if isset($page_name)}id="{$page_name|escape:'htmlall':'UTF-8'}"{/if} class="{if $hide_left_column}hide-left-column{/if} {if $hide_right_column}hide-right-column{/if} {if $content_only} content_only {/if}">
@@ -71,16 +74,22 @@
 			<p>{l s='You cannot place a new order from your country.'} <span class="bold">{$geolocation_country}</span></p>
 		</div>
 		{/if}
+        <div class="threed_site">
 		<div id="page" class="container_9 clearfix">
 
 			<!-- Header -->
 			<div id="header" class="grid_9 alpha omega">
-				<a id="header_logo" href="{$base_dir}" title="{$shop_name|escape:'htmlall':'UTF-8'}">
-					<img class="logo" src="{$logo_url}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}" {/if} />
-				</a>
-				<div id="header_right" class="grid_9 omega">
+            
+		<div id="topbit" class="threed-topbanner">
+		<a href="{$base_dir}"><img src="{$img_dir}Headphones.png" class="threed-headphones" alt="93.7FM" /></a>
+		<img src="{$img_dir}ThreeDRadio.png" alt="Three D Radio">
+
+				<div id="header_right" class="omega">
 					{$HOOK_TOP}
 				</div>
+
+        </div>
+
 			</div>
 
 			<div id="columns" class="grid_9 alpha omega clearfix">

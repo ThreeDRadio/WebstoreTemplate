@@ -40,6 +40,7 @@
 				{/if}
 			</div>
 		</div>
+    </div>
 	{/if}
 	</body>
 </html>

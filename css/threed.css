@@ -1,0 +1,27 @@
+.sf-menu {
+    width: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #000;
+}
+.sf-contener {
+    clear: none;
+    width: 400px;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#header_right {
+    clear: none;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#header_user {
+    clear: none;
+}

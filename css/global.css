@@ -53,7 +53,10 @@ a {cursor:pointer}
 body{
 	font:normal 11px/14px Arial, Verdana, sans-serif;
 	color:#222;
-	background:#fff
+    background-color: #545454;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 body.content_only {
 	background: #FFF;
@@ -554,6 +557,8 @@ div.star_hover a, div.star a:hover { background-position: 0 -32px }
 #header_right {
 	position:relative;
 	float: right
+    width: 500px;
+    padding-top:35px;
 }
 
 
@@ -2110,4 +2115,31 @@ tr.subitem > td:first-child + td {
 .ie8 #featured-products_block_center .product_image span.new{top:110px;right:0;width:94%}
 .lt-ie6 #featured-products_block_center .product_image span.new {top:110px;right:0;width:94%}
 
+
+.threed-topbanner {
+	background-image: url('../img/HeaderBackground.jpg');
+	background-repeat: no-repeat;
+	background-color: #000;
+	height: 228px;
+	padding-right: 0px;
+
+}
+
+.threed-headphones{
+	float: left;
+	margin-top: 30px;
+	z-index: 100;
+}
+
+.threed_site {
+    padding-top: 48px;
+}
+
+.container_9 {
+    background-color: #fff;
+}
+
+#header_user {
+    margin-right:8px;
+}
 
